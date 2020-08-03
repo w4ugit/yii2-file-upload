@@ -13,14 +13,14 @@
 
 namespace mihaildev\fileupload\handler;
 use mihaildev\fileupload\FileUploadBehavior;
-use yii\base\Object;
+use yii\base\BaseObject;
 
 /**
  * Class BaseHandler
  *
  * @package mihaildev\fileupload\handler
  */
-abstract class BaseHandler extends Object implements HandlerInterface{
+abstract class BaseHandler extends BaseObject implements HandlerInterface{
 	/**
 	 * @var string
 	 */
