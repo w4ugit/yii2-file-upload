@@ -26,7 +26,7 @@ class ImageUploadWidget extends InputWidget{
 
 	public $imageUrl;
 
-	public $template = '{hiddenInput} {image} {checkbox} {fileInput}';
+	public $template = '{hiddenInput} <div class="one-image">{image} {checkbox}</div> {fileInput}';
 
 	public $checkboxTemplate = '<label>{checkbox} {checkboxLabel}</label>';
 
@@ -69,4 +69,4 @@ class ImageUploadWidget extends InputWidget{
 
 		echo strtr($this->template, $replace);
 	}
-} 
+}
